@@ -1,3 +1,5 @@
+package micromobility;
+
 public class JourneyRealizeHandler {
  ??? // The class members
          ??? // The constructor/s

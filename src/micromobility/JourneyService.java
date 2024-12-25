@@ -1,3 +1,5 @@
+package micromobility;
+
 public class JourneyService {
  ??? // The class members, according to the Domain Model
          ??? // The constructor/s
