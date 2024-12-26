@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="ALL PACKET DATA DONE">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Server.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Added changes on Server.java">
+      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -93,7 +94,7 @@
       <workItem from="1733828229675" duration="2570000" />
       <workItem from="1734560737666" duration="23000" />
       <workItem from="1735206621337" duration="306000" />
-      <workItem from="1735206940253" duration="1711000" />
+      <workItem from="1735206940253" duration="4579000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -151,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735207866022</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added changes on Server.java">
+      <option name="closed" value="true" />
+      <created>1735209016499</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735209016499</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +211,7 @@
     <MESSAGE value="Implemented PMVVehicle" />
     <MESSAGE value="Added to classpath jUnit and imported all in all tests" />
     <MESSAGE value="ALL PACKET DATA DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="ALL PACKET DATA DONE" />
+    <MESSAGE value="Added changes on Server.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes on Server.java" />
   </component>
 </project>
