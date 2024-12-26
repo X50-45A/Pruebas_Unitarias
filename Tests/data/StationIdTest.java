@@ -27,7 +27,7 @@ public class StationIdTest {
         assertThrows(IllegalArgumentException.class, () -> {new StationID("ST0");});
         assertThrows(IllegalArgumentException.class, () -> {new StationID("AT2345");});
         assertThrows(IllegalArgumentException.class, () -> {new StationID("123456");});
-        assertDoesNotThrow((IllegalArgumentException.class, () -> {new StationID("ST0001");});
+        assertDoesNotThrow(() -> {new StationID("ST0001");});
     }
 
     @Test
