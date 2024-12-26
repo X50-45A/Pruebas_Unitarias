@@ -1,6 +1,5 @@
 package data;
 import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -31,9 +30,12 @@ public class GeographicPointTest {
 
     @Test
     void hashCodeTest() {
-        assertEquals(point1.hashCode(), point1.hashCode());
-        assertNotEquals(point1.hashCode(), point2.hashCode());
-        assertNotEquals(point1.hashCode(), point3.hashCode());
+        assertEquals(point1.hashCode(),
+                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
+        assertEquals(point2.hashCode(),
+                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
+        assertEquals(point3.hashCode(),
+                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
     }
 
     @Test
