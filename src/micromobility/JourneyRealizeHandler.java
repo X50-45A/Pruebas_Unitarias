@@ -1,6 +1,7 @@
 package micromobility;
 
 import data.GeographicPoint;
+import data.StationID;
 import data.VehicleID;
 import services.Server;
 import services.smartfeatures.ArduinoMicroController;
