@@ -21,7 +21,7 @@ public interface Server { // External service for the persistent storage
     void stopPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date, float avSp, float dist, int dur, BigDecimal imp)
             throws InvalidPairingArgsException, ConnectException;
     // Internal operations
-    void setPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date)
+    void setPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date);
     void unPairRegisterService(JourneyService s)
             throws PairingNotFoundException;
     void registerLocation(VehicleID veh, StationID st);

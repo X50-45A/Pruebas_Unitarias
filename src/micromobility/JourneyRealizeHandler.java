@@ -58,6 +58,6 @@ public class JourneyRealizeHandler {
    private void calculateImport(float distance, int duration, float averageSpeed, LocalDateTime endTime) {
       // Logic to calculate the cost of the journey...
    }
- (. . .) // Setter methods for injecting dependences
+  // Setter methods for injecting dependences
 }
 

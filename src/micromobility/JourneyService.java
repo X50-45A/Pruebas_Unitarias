@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 public class JourneyService {
- ??? // Class members based on Domain Model
+ // Class members based on Domain Model
     private final UserAccount user;
     private final VehicleID vehicle;
     private final StationID startStation;
