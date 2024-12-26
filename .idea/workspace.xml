@@ -7,6 +7,9 @@
     <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Added changes on Server.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,12 +33,12 @@
     &quot;assignee&quot;: &quot;X50-45A&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/X50-45A/Pruebas_Unitarias.git",
-    "accountId": "65616b67-a69c-4842-b8f9-c65b0cc16f6c"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/X50-45A/Pruebas_Unitarias.git&quot;,
+    &quot;accountId&quot;: &quot;80ae0aa8-ad07-46ad-a93a-87e754220e83&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -52,6 +55,7 @@
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.GeographicPointTest.executor": "Run",
+    "JUnit.GeographicPointTest.getterTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -70,6 +74,45 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.GeographicPointTest.getterTest">
+    <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeographicPointTest.getterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
+      <option name="METHOD_NAME" value="getterTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
+        <item itemvalue="JUnit.GeographicPointTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
