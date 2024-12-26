@@ -25,7 +25,7 @@ public class PMVehicle {
     public void setUnderWay () {
         this.state = PMVState.UnderWay;
     }
-    public void setAvailb () {
+    public void setAvailbale() {
         this.state = PMVState.Availbale;
     }
     public int getVehicleId() {
