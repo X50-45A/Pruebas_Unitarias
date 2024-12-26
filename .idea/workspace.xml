@@ -6,10 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Added changes on Server.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +61,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alsor/OneDrive/Documentos/GitHub/Pruebas_Unitarias",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +71,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.GeographicPointTest.getterTest">
+  <component name="RunManager" selected="JUnit.GeographicPointTest">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -108,16 +105,16 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
+        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.22855.74" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.22855.74" />
       </set>
     </attachedChunks>
   </component>
@@ -138,6 +135,7 @@
       <workItem from="1734560737666" duration="23000" />
       <workItem from="1735206621337" duration="306000" />
       <workItem from="1735206940253" duration="4579000" />
+      <workItem from="1735228092962" duration="1094000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
