@@ -1,4 +1,14 @@
 package services;
+
+import data.GeographicPoint;
+import data.StationID;
+import data.UserAccount;
+import data.VehicleID;
+import micromobility.JourneyService;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
 /**
  * External services involved in the shared micromobility system
  */
