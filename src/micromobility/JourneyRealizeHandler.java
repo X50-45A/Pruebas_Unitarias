@@ -9,6 +9,8 @@ import services.smartfeatures.QRDecoder;
 
 import java.awt.image.BufferedImage;
 import java.time.LocalDateTime;
+import exceptions.*;
+
 
 public class JourneyRealizeHandler {
    private final JourneyService journeyService;
