@@ -80,7 +80,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.GeographicPointTest.getterTest">
+  <component name="RunManager" selected="JUnit.GeographicPointTest">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -114,8 +114,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
+        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
       </list>
     </recent_temporary>
   </component>
