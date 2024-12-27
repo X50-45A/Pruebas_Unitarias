@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Added the last Exception in class">
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="modified VehicleIDTest.java it had bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/UserAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/UserAccount.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +59,13 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.GeographicPointTest.executor": "Run",
     "JUnit.GeographicPointTest.getterTest.executor": "Run",
+    "JUnit.GeographicPointTest.hashCodeTest.executor": "Run",
+    "JUnit.GeographicPointTest.toStringTest.executor": "Run",
     "JUnit.StationIdTest.executor": "Run",
     "JUnit.UserAccountTest.executor": "Run",
+    "JUnit.UserAccountTest.invalidFormat.executor": "Debug",
     "JUnit.VehicleIDTest.executor": "Run",
+    "JUnit.VehicleIDTest.toStringTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -78,7 +85,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.VehicleIDTest.toStringTest">
+  <component name="RunManager" selected="JUnit.data in Practica_unitarias">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -94,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StationIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicPointTest.getterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.StationIdTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
+      <option name="METHOD_NAME" value="getterTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicPointTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
         <pattern>
@@ -118,13 +126,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.UserAccountTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
+      <option name="METHOD_NAME" value="hashCodeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VehicleIDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeographicPointTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
         <pattern>
@@ -133,34 +142,33 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.VehicleIDTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VehicleIDTest.toStringTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica_unitarias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="MAIN_CLASS_NAME" value="data.VehicleIDTest" />
+      <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
       <option name="METHOD_NAME" value="toStringTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="data in Practica_unitarias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VehicleIDTest.toStringTest" />
-        <item itemvalue="JUnit.VehicleIDTest" />
-        <item itemvalue="JUnit.UserAccountTest" />
-        <item itemvalue="JUnit.StationIdTest" />
+        <item itemvalue="JUnit.data in Practica_unitarias" />
+        <item itemvalue="JUnit.GeographicPointTest.hashCodeTest" />
+        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
+        <item itemvalue="JUnit.GeographicPointTest.toStringTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
       </list>
     </recent_temporary>
@@ -190,6 +198,7 @@
       <workItem from="1734560737666" duration="23000" />
       <workItem from="1735206621337" duration="306000" />
       <workItem from="1735206940253" duration="4579000" />
+      <workItem from="1735293166902" duration="384000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
@@ -271,7 +280,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735291716461</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="modified VehicleIDTest.java it had bugs">
+      <option name="closed" value="true" />
+      <created>1735292011274</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735292011274</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +342,18 @@
     <MESSAGE value="Added changes on Server.java" />
     <MESSAGE value="Added Exceptions in all classes" />
     <MESSAGE value="Added the last Exception in class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the last Exception in class" />
+    <MESSAGE value="modified VehicleIDTest.java it had bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified VehicleIDTest.java it had bugs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/data/UserAccount.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

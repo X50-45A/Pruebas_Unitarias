@@ -48,8 +48,8 @@ public class UserAccountTest {
 
     @Test
     void toStringTest(){
-        assertEquals("UserAccount{" + "email=user1@gmail.com'" + '\'' + '}', user1.toString());
-        assertEquals("UserAccount{" + "email=user2@hotmail.es'" + '\'' + '}', user2.toString());
-        assertEquals("UserAccount{" + "email=user3@outlook.org'" + '\'' + '}', user3.toString());
+        assertEquals("UserAccount{" + "email='user1@gmail.com" + '\'' + '}', user1.toString());
+        assertEquals("UserAccount{" + "email='user2@hotmail.es" + '\'' + '}', user2.toString());
+        assertEquals("UserAccount{" + "email='user3@outlook.org" + '\'' + '}', user3.toString());
     }
 }

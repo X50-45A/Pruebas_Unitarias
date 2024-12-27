@@ -23,25 +23,22 @@ public class GeographicPointTest {
         assertEquals(40.7f, point2.getLatitude());
         assertEquals(40.76f, point2.getLongitude());
 
-        assertEquals(50.9f, point3.getLatitude());
+        assertEquals(0.0f, point3.getLatitude());
         assertEquals(0.0f, point3.getLongitude());
     }
 
 
     @Test
     void hashCodeTest() {
-        assertEquals(point1.hashCode(),
-                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
-        assertEquals(point2.hashCode(),
-                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
-        assertEquals(point3.hashCode(),
-                31 * (31 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
+        assertEquals(point1.hashCode(),31 * (31 * 1 + Float.floatToIntBits(point1.getLatitude())) + Float.floatToIntBits(point1.getLongitude()));
+        assertEquals(point2.hashCode(),31 * (31 * 1 + Float.floatToIntBits(point2.getLatitude())) + Float.floatToIntBits(point2.getLongitude()));
+        assertEquals(point3.hashCode(),31 * (31 * 1 + Float.floatToIntBits(point3.getLatitude())) + Float.floatToIntBits(point3.getLongitude()));
     }
 
     @Test
     void toStringTest() {
-        assertEquals("Geographic point {party='30.50000''\''longitude='10.85000}", point1.toString());
-        assertEquals("Geographic point {party='40.70000''\'' longitude='40.76000}", point2.toString());
-        assertEquals("Geographic point {party='0.00000''\''longitude='0.00000}", point3.toString());
+        assertEquals("Geographic point {party='30.5'longitude='10.85}", point1.toString());
+        assertEquals("Geographic point {party='40.7'longitude='40.76}", point2.toString());
+        assertEquals("Geographic point {party='0.0'longitude='0.0}", point3.toString());
     }
 }
