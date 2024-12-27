@@ -47,8 +47,8 @@ public class VehicleIDTest {
 
     @Test
     void toStringTest(){
-        assertEquals("VehicleID{" + "value=PMV00001" + '\'' + '}', id1.toString());
-        assertEquals("VehicleID{" + "value=PMV00002" + '\'' + '}', id2.toString());
-        assertEquals("VehicleID{" + "value=PMV00003" + '\'' + '}', id3.toString());
+        assertEquals("VehicleID{" + "value='PMV00001" + '\'' + '}', id1.toString());
+        assertEquals("VehicleID{" + "value='PMV00002" + '\'' + '}', id2.toString());
+        assertEquals("VehicleID{" + "value='PMV00003" + '\'' + '}', id3.toString());
     }
 }
