@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class UserAccountTest implements UserAccountTestInterface{
+public class UserAccountTest implements StationUserVehicleInterface{
     static UserAccount user1;
     static UserAccount user2;
     static UserAccount user3;

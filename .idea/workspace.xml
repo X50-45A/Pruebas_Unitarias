@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Implementación Interfaz de StationID">
-      <change afterPath="$PROJECT_DIR$/Tests/data/UserAccountTestInterface.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Interface de la clase UserAccountTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/StationIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/StationIdTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/StationIdTestInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/StationUserVehicleInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/UserAccountTestInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/data/VehicleIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/VehicleIDTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +58,7 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.GeographicPointTest.executor": "Run",
     "JUnit.GeographicPointTest.getterTest.executor": "Run",
+    "JUnit.StationIdTest and 2 more.executor": "Run",
     "JUnit.StationIdTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -80,7 +84,7 @@
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StationIdTest">
+  <component name="RunManager" selected="JUnit.StationIdTest and 2 more">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -112,6 +116,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StationIdTest and 2 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.StationUserVehicleInterface" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="data.StationIdTest" />
+        <pattern testClass="data.UserAccountTest" />
+        <pattern testClass="data.VehicleIDTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StationIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -129,6 +153,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StationIdTest and 2 more" />
         <item itemvalue="JUnit.StationIdTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
@@ -251,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735395652402</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Correccion de la visibilidad de los tests en UserAccountTest">
+      <option name="closed" value="true" />
+      <created>1735404019169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1735404019169</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Interface de la clase UserAccountTest">
+      <option name="closed" value="true" />
+      <created>1735404966290</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735404966290</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +347,8 @@
     <MESSAGE value="Implementation of GeographicPointTestInterface" />
     <MESSAGE value="Correccion de visibilidad para la interface de StationID" />
     <MESSAGE value="Implementación Interfaz de StationID" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación Interfaz de StationID" />
+    <MESSAGE value="Correccion de la visibilidad de los tests en UserAccountTest" />
+    <MESSAGE value="Interface de la clase UserAccountTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface de la clase UserAccountTest" />
   </component>
 </project>

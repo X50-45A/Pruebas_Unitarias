@@ -8,6 +8,7 @@ import services.smartfeatures.ArduinoMicroController;
 import services.smartfeatures.QRDecoder;
 
 import java.awt.image.BufferedImage;
+import java.net.ConnectException;
 import java.time.LocalDateTime;
 import exceptions.*;
 
@@ -27,13 +28,14 @@ public class JourneyRealizeHandler {
    }
     // Different input events that intervene
     // User interface input events
-    public void scanQR(BufferedImage qrImage) throws ConnectException, InvalidPairingArgsException, CorruptedImgException, PMVNotAvailException, ProceduralException {
+    public void scanQR(BufferedImage qrImage) throws ConnectException, InvalidPairingArgsException, CorruptedImgException, PMVNotAvailException, ProceduralException, exceptions.ConnectException {
        PMVehicle vehicleID = qrDecoder.getVehicleID(qrImage);
        server.checkPMVAvail(vehicleID);
        // Further pairing logic...
     }
    public void unPairVehicle() throws ConnectException, InvalidPairingArgsException, PairingNotFoundException, ProceduralException {
       // Logic for unpairing vehicle...
+      journeyService.getEndStation();
    }
 
    // Input events from Bluetooth
@@ -42,12 +44,12 @@ public class JourneyRealizeHandler {
    }
 
    // Input events from Arduino microcontroller
-   public void startDriving() throws ConnectException, ProceduralException {
+   public void startDriving() throws ConnectException, ProceduralException, exceptions.ConnectException {
       arduino.startDriving();
       // Further initialization logic...
    }
 
-   public void stopDriving() throws ConnectException, ProceduralException {
+   public void stopDriving() throws ConnectException, ProceduralException, exceptions.ConnectException {
       arduino.stopDriving();
       // Finalization logic...
    }

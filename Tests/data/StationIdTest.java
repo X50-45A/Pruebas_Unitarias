@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class StationIdTest implements StationIdTestInterface{
+public class StationIdTest implements StationUserVehicleInterface{
     static StationID id1;
     static StationID id2;
     static StationID id3;
