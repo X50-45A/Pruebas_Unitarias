@@ -19,19 +19,22 @@ public class PMVehicle {
     // The constructor/s
     // All the getter methods
     // The setter methods to be used are only the following ones
-    public void setNotAvailb () {
+    public void setNotAvailbe () {
         this.state = PMVState.NotAvailable;
     }
     public void setUnderWay () {
         this.state = PMVState.UnderWay;
     }
-    public void setAvailbale() {
-        this.state = PMVState.Availbale;
+    public void setAvailable() {
+        this.state = PMVState.Available;
     }
+    public void setLocation(GeographicPoint gP) {
+        this.position = gP;
+    }
+
     public int getVehicleId() {
         return vehicleId;
     }
-
     public int getCharge() {
         return charge;
     }
