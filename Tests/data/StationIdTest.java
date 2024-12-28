@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-public class StationIdTest {
+public class StationIdTest implements StationIdTestInterface{
     static StationID id1;
     static StationID id2;
     static StationID id3;
@@ -17,12 +17,12 @@ public class StationIdTest {
         id3 = new StationID("ST0003");
     }
     @Test
-    void nullId(){
+    public void nullId(){
         assertThrows(NullPointerException.class, () -> {new StationID(null);});
     }
 
     @Test
-    void invalidFormat(){
+    public void invalidFormat(){
         assertThrows(IllegalArgumentException.class, () -> {new StationID("ST");});
         assertThrows(IllegalArgumentException.class, () -> {new StationID("ST0");});
         assertThrows(IllegalArgumentException.class, () -> {new StationID("AT2345");});
@@ -31,7 +31,7 @@ public class StationIdTest {
     }
 
     @Test
-    void equals(){
+    public void equals(){
         assertEquals(id1, new StationID("ST0001"));
         assertNotEquals(id1,id2);
         assertNotEquals(id1,id3);
@@ -39,14 +39,14 @@ public class StationIdTest {
     }
 
     @Test
-    void hashcode(){
+    public void hashcode(){
         assertEquals(id1.hashCode(), "ST0001".hashCode());
         assertEquals(id2.hashCode(), "ST0002".hashCode());
         assertEquals(id3.hashCode(), "ST0003".hashCode());
     }
 
     @Test
-    void toStringTest(){
+    public void toStringTest(){
         assertEquals("StationID{" + "value='ST0001" + '\'' + '}' , id1.toString());
         assertEquals("StationID{" + "value='ST0002" + '\'' + '}' , id2.toString());
         assertEquals("StationID{" + "value='ST0003" + '\'' + '}' , id3.toString());

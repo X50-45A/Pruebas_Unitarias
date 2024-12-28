@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/data/GeographicPointTestInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/GeographicPointTest.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Implementation of GeographicPointTestInterface">
       <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,7 @@
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GeographicPointTest">
+  <component name="RunManager" selected="JUnit.StationIdTest">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -111,8 +108,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StationIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data" />
+      <option name="MAIN_CLASS_NAME" value="data.StationIdTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StationIdTest" />
+        <item itemvalue="JUnit.GeographicPointTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
         <item itemvalue="JUnit.GeographicPointTest.getterTest" />
       </list>
@@ -209,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735209016499</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Implementation of GeographicPointTestInterface">
+      <option name="closed" value="true" />
+      <created>1735394152581</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735394152581</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +283,7 @@
     <MESSAGE value="Added to classpath jUnit and imported all in all tests" />
     <MESSAGE value="ALL PACKET DATA DONE" />
     <MESSAGE value="Added changes on Server.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Implementation of GeographicPointTestInterface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of GeographicPointTestInterface" />
   </component>
 </project>
