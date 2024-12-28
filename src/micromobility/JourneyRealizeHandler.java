@@ -8,7 +8,6 @@ import services.smartfeatures.ArduinoMicroController;
 import services.smartfeatures.QRDecoder;
 
 import java.awt.image.BufferedImage;
-import java.net.ConnectException;
 import java.time.LocalDateTime;
 import exceptions.*;
 
