@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class UserAccountTest {
+public class UserAccountTest implements UserAccountTestInterface{
     static UserAccount user1;
     static UserAccount user2;
     static UserAccount user3;
@@ -18,12 +18,12 @@ public class UserAccountTest {
         user3 = new UserAccount("user3@outlook.org");
     }
     @Test
-    void nullId(){
+    public void nullId(){
         assertThrows(NullPointerException.class, () -> {new UserAccount(null);});
     }
 
     @Test
-    void invalidFormat(){
+    public void invalidFormat(){
         assertThrows(IllegalArgumentException.class, () -> {new UserAccount("user");});
         assertThrows(IllegalArgumentException.class, () -> {new UserAccount("@hotmail.com");});
         assertThrows(IllegalArgumentException.class, () -> {new UserAccount("user.com");});
@@ -32,7 +32,7 @@ public class UserAccountTest {
     }
 
     @Test
-    void equals(){
+    public void equals(){
         assertEquals(user1, new UserAccount("user1@gmail.com"));
         assertNotEquals(user1, user2);
         assertNotEquals(user1, user3);
@@ -40,14 +40,14 @@ public class UserAccountTest {
     }
 
     @Test
-    void hashcode(){
+    public void hashcode(){
         assertEquals(user1.hashCode(), "user1@gmail.com".hashCode());
         assertEquals(user2.hashCode(), "user2@hotmail.es".hashCode());
         assertEquals(user3.hashCode(), "user3@outlook.org".hashCode());
     }
 
     @Test
-    void toStringTest(){
+    public void toStringTest(){
         assertEquals("UserAccount{" + "email='user1@gmail.com" + '\'' + '}', user1.toString());
         assertEquals("UserAccount{" + "email='user2@hotmail.es" + '\'' + '}', user2.toString());
         assertEquals("UserAccount{" + "email='user3@outlook.org" + '\'' + '}', user3.toString());
