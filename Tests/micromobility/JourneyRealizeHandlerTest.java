@@ -1,6 +1,8 @@
 package micromobility;
 import data.*;
 import exceptions.*;
+import micromobility.payment.Wallet;
+import micromobility.payment.WalletPayment;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import services.Server;
@@ -20,6 +22,7 @@ class JourneyRealizeHandlerTest {
     private QRDecoder qrDecoder;
     private Server server;
     private ArduinoMicroController arduino;
+    private Wallet wallet;
 
     @BeforeEach
     void setUp() {
@@ -29,6 +32,7 @@ class JourneyRealizeHandlerTest {
                 new StationID("ST1234"),
                 new GeographicPoint(40.7128f, -74.0060f)
         );
+
         qrDecoder = new QRDecoder() {
             @Override
             public VehicleID getVehicleID(BufferedImage qrImg) throws CorruptedImgException {
@@ -38,6 +42,7 @@ class JourneyRealizeHandlerTest {
                 return new VehicleID("PMV12345");
             }
         };
+
         server = new Server() {
             @Override
             public void checkPMVAvail(VehicleID vhID) throws PMVNotAvailException, ConnectException {
@@ -100,6 +105,8 @@ class JourneyRealizeHandlerTest {
             }
         };
 
+        wallet = new Wallet(new BigDecimal("100.00"));
+
         journeyRealizeHandler = new JourneyRealizeHandler(journeyService, qrDecoder, server, arduino);
     }
 
@@ -159,5 +166,20 @@ class JourneyRealizeHandlerTest {
 
         assertDoesNotThrow(() -> journeyRealizeHandler.broadcastStationID(stationID));
     }
-}
 
+    @Test
+    void testSelectPaymentMethodAndRealizePayment_Successful() throws NotEnoughWalletException {
+        WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("30.00"), wallet);
+        payment.processPayment();
+
+        assertEquals(new BigDecimal("70.00"), wallet.getBalance());
+    }
+
+    @Test
+    void testSelectPaymentMethodAndRealizePayment_ThrowsNotEnoughWalletException() {
+        WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("150.00"), wallet);
+
+        assertThrows(NotEnoughWalletException.class, payment::processPayment);
+        assertEquals(new BigDecimal("100.00"), wallet.getBalance());
+    }
+}

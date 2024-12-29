@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Interface de la clase UserAccountTest">
-      <change beforePath="$PROJECT_DIR$/Tests/services/ArduinoMicrocontrollerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/services/QRDecoderTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/services/ServerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/services/UnbondedBTSignalTest.java" beforeDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Fixed bugs in JourneyRealizeHandlerTest.java">
+      <change afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletPaymentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/NotEnoughWalletException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/micromobility/payment/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/micromobility/payment/Wallet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/micromobility/payment/WalletPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Exception" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,6 +65,7 @@
     "JUnit.GeographicPointTest.executor": "Run",
     "JUnit.GeographicPointTest.getterTest.executor": "Run",
     "JUnit.JourneyRealizeHandlerTest.executor": "Run",
+    "JUnit.JourneyRealizeHandlerTest.testScanQR_ThrowsPMVNotAvailException.executor": "Debug",
     "JUnit.StationIdTest and 2 more.executor": "Run",
     "JUnit.StationIdTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -310,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735404966290</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Fixed bugs in JourneyRealizeHandlerTest.java">
+      <option name="closed" value="true" />
+      <created>1735473856141</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1735473856141</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +380,7 @@
     <MESSAGE value="Implementación Interfaz de StationID" />
     <MESSAGE value="Correccion de la visibilidad de los tests en UserAccountTest" />
     <MESSAGE value="Interface de la clase UserAccountTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface de la clase UserAccountTest" />
+    <MESSAGE value="Fixed bugs in JourneyRealizeHandlerTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs in JourneyRealizeHandlerTest.java" />
   </component>
 </project>
