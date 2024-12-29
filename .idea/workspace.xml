@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Interface de la clase UserAccountTest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/StationIdTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/StationIdTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/StationIdTestInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/StationUserVehicleInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/UserAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/UserAccountTestInterface.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/data/VehicleIDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/data/VehicleIDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/JourneyRealizeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/services/ArduinoMicrocontrollerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/services/QRDecoderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/services/ServerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/services/UnbondedBTSignalTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -58,6 +60,7 @@
     "Downloaded.Files.Path.Enabled": "false",
     "JUnit.GeographicPointTest.executor": "Run",
     "JUnit.GeographicPointTest.getterTest.executor": "Run",
+    "JUnit.JourneyRealizeHandlerTest.executor": "Run",
     "JUnit.StationIdTest and 2 more.executor": "Run",
     "JUnit.StationIdTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
@@ -67,7 +70,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Branch",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/alsor/OneDrive/Documentos/GitHub/Pruebas_Unitarias",
     "node.js.detected.package.eslint": "true",
@@ -84,7 +87,7 @@
       <recent name="data" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StationIdTest and 2 more">
+  <component name="RunManager" selected="JUnit.JourneyRealizeHandlerTest">
     <configuration name="GeographicPointTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -112,6 +115,21 @@
       <option name="MAIN_CLASS_NAME" value="data.GeographicPointTest" />
       <option name="METHOD_NAME" value="getterTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JourneyRealizeHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="micromobility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="micromobility" />
+      <option name="MAIN_CLASS_NAME" value="micromobility.JourneyRealizeHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JourneyRealizeHandlerTest" />
         <item itemvalue="JUnit.StationIdTest and 2 more" />
         <item itemvalue="JUnit.StationIdTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
         <item itemvalue="JUnit.GeographicPointTest" />
-        <item itemvalue="JUnit.GeographicPointTest.getterTest" />
       </list>
     </recent_temporary>
   </component>

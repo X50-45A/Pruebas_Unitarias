@@ -24,9 +24,9 @@ class JourneyRealizeHandlerTest {
     @BeforeEach
     void setUp() {
         journeyService = new JourneyService(
-                new UserAccount("testUser"),
-                new VehicleID("vehicle123"),
-                new StationID("station123"),
+                new UserAccount("testUser@example.com"),
+                new VehicleID("PMV12345"),
+                new StationID("ST1234"),
                 new GeographicPoint(40.7128f, -74.0060f)
         );
         qrDecoder = new QRDecoder() {
@@ -35,13 +35,13 @@ class JourneyRealizeHandlerTest {
                 if (qrImg == null) {
                     throw new CorruptedImgException("QR image is null");
                 }
-                return new VehicleID("vehicle123");
+                return new VehicleID("PMV12345");
             }
         };
         server = new Server() {
             @Override
             public void checkPMVAvail(VehicleID vhID) throws PMVNotAvailException, ConnectException {
-                if (!vhID.getValue().equals("vehicle123")) {
+                if (!vhID.getValue().equals("PMV12345")) {
                     throw new PMVNotAvailException("Vehicle not available");
                 }
             }
@@ -155,7 +155,7 @@ class JourneyRealizeHandlerTest {
 
     @Test
     void testBroadcastStationID_Successful() {
-        StationID stationID = new StationID("station123");
+        StationID stationID = new StationID("ST1234");
 
         assertDoesNotThrow(() -> journeyRealizeHandler.broadcastStationID(stationID));
     }
