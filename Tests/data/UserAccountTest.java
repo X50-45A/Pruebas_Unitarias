@@ -1,9 +1,7 @@
 package data;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class UserAccountTest implements StationUserVehicleInterface{
     static UserAccount user1;
