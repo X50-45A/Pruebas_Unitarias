@@ -212,4 +212,13 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
         assertThrows(NotEnoughWalletException.class, payment::processPayment);
         assertEquals(new BigDecimal("100.00"), wallet.getBalance());
     }
+    @Test
+    void testRealizePaymentWithWallet() throws NotEnoughWalletException, ConnectException {
+        BigDecimal paymentAmount = new BigDecimal("25.00");
+        char paymentMethod = 'W';
+
+        journeyRealizeHandler.realizePayment(journeyService.getUser(), paymentAmount, paymentMethod);
+
+        assertEquals(new BigDecimal("75.00"), wallet.getBalance());
+    }
 }
