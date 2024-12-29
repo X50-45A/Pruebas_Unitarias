@@ -1,5 +1,6 @@
 package micromobility.payment;
 
+import data.UserAccount;
 import exceptions.NotEnoughWalletException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,58 +12,53 @@ import static org.junit.jupiter.api.Assertions.*;
 class WalletPaymentTest implements WalletPaymentTestInterface {
     private WalletPayment walletPayment;
     private Wallet wallet;
-    private String serviceID;
+    private UserAccount userAccount;
     private BigDecimal amount;
 
     @BeforeEach
     void setUp() {
-        serviceID = "SERV123";
+        userAccount = new UserAccount("testUser@example.com");
         amount = new BigDecimal("25.00");
         wallet = new Wallet(new BigDecimal("100.00"));
-        walletPayment = new WalletPayment(serviceID, amount, wallet);
+        walletPayment = new WalletPayment(userAccount, amount, wallet);
     }
 
     @Test
     public void testWalletPaymentCreation() {
         assertNotNull(walletPayment);
-        assertEquals(serviceID, walletPayment.getServiceID());
+        assertEquals(userAccount, walletPayment.getUserAccount());
         assertEquals(amount, walletPayment.getAmount());
     }
 
+
     @Test
-    public void testWalletPaymentWithNullServiceID() {
+    public void testWalletPaymentWithNullUserAccount() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(null, amount, wallet));
     }
 
     @Test
-    public void testWalletPaymentWithEmptyServiceID() {
-        assertThrows(IllegalArgumentException.class,
-                () -> new WalletPayment("", amount, wallet));
-    }
-
-    @Test
     public void testWalletPaymentWithNullAmount() {
         assertThrows(IllegalArgumentException.class,
-                () -> new WalletPayment(serviceID, null, wallet));
+                () -> new WalletPayment(userAccount, null, wallet));
     }
 
     @Test
     public void testWalletPaymentWithZeroAmount() {
         assertThrows(IllegalArgumentException.class,
-                () -> new WalletPayment(serviceID, BigDecimal.ZERO, wallet));
+                () -> new WalletPayment(userAccount, BigDecimal.ZERO, wallet));
     }
 
     @Test
     public void testWalletPaymentWithNegativeAmount() {
         assertThrows(IllegalArgumentException.class,
-                () -> new WalletPayment(serviceID, new BigDecimal("-25.00"), wallet));
+                () -> new WalletPayment(userAccount, new BigDecimal("-25.00"), wallet));
     }
 
     @Test
     public void testWalletPaymentWithNullWallet() {
         assertThrows(IllegalArgumentException.class,
-                () -> new WalletPayment(serviceID, amount, null));
+                () -> new WalletPayment(userAccount, amount, null));
     }
 
     @Test
@@ -74,7 +70,7 @@ class WalletPaymentTest implements WalletPaymentTestInterface {
     @Test
     public void testProcessPaymentWithInsufficientFunds() {
         WalletPayment largePayment = new WalletPayment(
-                serviceID,
+                userAccount,
                 new BigDecimal("150.00"),
                 wallet
         );

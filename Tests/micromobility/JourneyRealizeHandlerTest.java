@@ -82,6 +82,11 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
             public void registerLocation(VehicleID veh, StationID st) {
                 // Simulated server behavior
             }
+
+            @Override
+            public void registerPayment(JourneyService journeyService, UserAccount user, BigDecimal imp, char payMeth) throws ConnectException {
+
+            }
         };
 
         arduino = new ArduinoMicroController() {
@@ -147,6 +152,11 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
 
             @Override
             public void registerLocation(VehicleID veh, StationID st) {}
+
+            @Override
+            public void registerPayment(JourneyService journeyService, UserAccount user, BigDecimal imp, char payMeth) throws ConnectException {
+
+            }
         };
 
         // Crear una nueva instancia del handler con el server modificado
@@ -191,14 +201,14 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
 
     @Test
     public void testSelectPaymentMethodAndRealizePayment_Successful() throws NotEnoughWalletException {
-        WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("30.00"), wallet);
+        WalletPayment payment = new WalletPayment(journeyService.getUser(), new BigDecimal("30.00"), wallet);
         payment.processPayment();
         assertEquals(new BigDecimal("70.00"), wallet.getBalance());
     }
 
     @Test
     public void testSelectPaymentMethodAndRealizePayment_ThrowsNotEnoughWalletException() {
-        WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("150.00"), wallet);
+        WalletPayment payment = new WalletPayment(journeyService.getUser(), new BigDecimal("150.00"), wallet);
         assertThrows(NotEnoughWalletException.class, payment::processPayment);
         assertEquals(new BigDecimal("100.00"), wallet.getBalance());
     }

@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Los test han cambiado a public para el uso de la interface">
-      <change afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletPaymentTestInterface.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="modified VehicleIDTest.java it had bugs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/micromobility/payment/WalletPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/micromobility/payment/WalletPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Exception" />
         <option value="Class" />
-        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -33,7 +36,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/X50-45A/Pruebas_Unitarias.git&quot;,
-    &quot;accountId&quot;: &quot;65616b67-a69c-4842-b8f9-c65b0cc16f6c&quot;
+    &quot;accountId&quot;: &quot;80ae0aa8-ad07-46ad-a93a-87e754220e83&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -51,49 +54,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.GeographicPointTest.executor": "Run",
-    "JUnit.GeographicPointTest.getterTest.executor": "Run",
-    "JUnit.GeographicPointTest.hashCodeTest.executor": "Run",
-    "JUnit.GeographicPointTest.toStringTest.executor": "Run",
-    "JUnit.JourneyRealizeHandlerTest.executor": "Run",
-    "JUnit.StationIdTest.executor": "Run",
-    "JUnit.UserAccountTest.executor": "Run",
-    "JUnit.UserAccountTest.invalidFormat.executor": "Debug",
-    "JUnit.VehicleIDTest.executor": "Run",
-    "JUnit.VehicleIDTest.toStringTest.executor": "Run",
-    "JUnit.WalletPaymentTest.executor": "Run",
-    "JUnit.data in Practica_unitarias.executor": "Run",
-    "JUnit.micromobility in Practica_unitarias.executor": "Run",
-    "JUnit.services in Practica_unitarias.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "C:/Users/drago/Desktop/segonyany extra/Primer semestre/Estructura de Dades/Practica_unitarias/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.GeographicPointTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeographicPointTest.getterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeographicPointTest.hashCodeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeographicPointTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.JourneyRealizeHandlerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StationIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserAccountTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserAccountTest.invalidFormat.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.VehicleIDTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VehicleIDTest.toStringTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.data in Practica_unitarias.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.micromobility in Practica_unitarias.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.services in Practica_unitarias.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/drago/Desktop/segonyany extra/Primer semestre/Estructura de Dades/Practica_unitarias/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="micromobility.payment" />
-      <recent name="micromobility" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.WalletPaymentTest">
+}</component>
+  <component name="RunManager" selected="JUnit.JourneyRealizeHandlerTest">
     <configuration name="JourneyRealizeHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -168,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WalletPaymentTest" />
-        <item itemvalue="JUnit.WalletPaymentTest" />
         <item itemvalue="JUnit.JourneyRealizeHandlerTest" />
+        <item itemvalue="JUnit.WalletPaymentTest" />
         <item itemvalue="JUnit.services in Practica_unitarias" />
         <item itemvalue="JUnit.micromobility in Practica_unitarias" />
+        <item itemvalue="JUnit.data in Practica_unitarias" />
       </list>
     </recent_temporary>
   </component>
@@ -186,55 +182,112 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="" />
+      <created>1733224744821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1733224744821</updated>
+      <workItem from="1733224746036" duration="169000" />
+      <workItem from="1733224931582" duration="217000" />
+      <workItem from="1733225192900" duration="23000" />
+      <workItem from="1733225827617" duration="2397000" />
+      <workItem from="1733825801944" duration="1216000" />
+      <workItem from="1733828229675" duration="2570000" />
+      <workItem from="1734560737666" duration="23000" />
+      <workItem from="1735206621337" duration="306000" />
+      <workItem from="1735206940253" duration="4579000" />
+      <workItem from="1735293166902" duration="384000" />
+    </task>
+    <task id="LOCAL-00001" summary="a">
       <option name="closed" value="true" />
-      <created>1735487102189</created>
+      <created>1733224976156</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1735487102189</updated>
+      <updated>1733224976156</updated>
     </task>
-    <task id="LOCAL-00002" summary="Implementación interface JourneyServiceTestInterface.java y cambio de visibilidad de test en public">
+    <task id="LOCAL-00002" summary="Added">
       <option name="closed" value="true" />
-      <created>1735487389966</created>
+      <created>1733226750271</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1735487389966</updated>
+      <updated>1733226750272</updated>
     </task>
-    <task id="LOCAL-00003" summary="Test cambiados a public">
+    <task id="LOCAL-00003" summary="Added all classes to start implementing">
       <option name="closed" value="true" />
-      <created>1735487736575</created>
+      <created>1733257331667</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1735487736575</updated>
+      <updated>1733257331667</updated>
     </task>
-    <task id="LOCAL-00004" summary="Interface de la clase test PMVehicle">
+    <task id="LOCAL-00004" summary="Implemented PMVVehicle">
       <option name="closed" value="true" />
-      <created>1735487772861</created>
+      <created>1733830704766</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1735487772861</updated>
+      <updated>1733830704766</updated>
     </task>
-    <task id="LOCAL-00005" summary="Interface de la clase test WalletTest i cambio de visibilidad de los test pertinentes">
+    <task id="LOCAL-00005" summary="Implemented PMVVehicle">
       <option name="closed" value="true" />
-      <created>1735488344311</created>
+      <created>1735206683124</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1735488344311</updated>
+      <updated>1735206683124</updated>
     </task>
-    <task id="LOCAL-00006" summary="Los test han cambiado a public para el uso de la interface">
+    <task id="LOCAL-00006" summary="Added to classpath jUnit and imported all in all tests">
       <option name="closed" value="true" />
-      <created>1735488596414</created>
+      <created>1735207119336</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1735488596414</updated>
+      <updated>1735207119336</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ALL PACKET DATA DONE">
+      <option name="closed" value="true" />
+      <created>1735207866021</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735207866022</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added changes on Server.java">
+      <option name="closed" value="true" />
+      <created>1735209016499</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735209016499</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Exceptions in all classes">
+      <option name="closed" value="true" />
+      <created>1735291553396</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735291553396</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added the last Exception in class">
+      <option name="closed" value="true" />
+      <created>1735291716461</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1735291716461</updated>
+    </task>
+    <task id="LOCAL-00011" summary="modified VehicleIDTest.java it had bugs">
+      <option name="closed" value="true" />
+      <created>1735292011274</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735292011274</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,12 +342,6 @@
     <MESSAGE value="Added Exceptions in all classes" />
     <MESSAGE value="Added the last Exception in class" />
     <MESSAGE value="modified VehicleIDTest.java it had bugs" />
-    <MESSAGE value="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java" />
-    <MESSAGE value="Implementación interface JourneyServiceTestInterface.java y cambio de visibilidad de test en public" />
-    <MESSAGE value="Test cambiados a public" />
-    <MESSAGE value="Interface de la clase test PMVehicle" />
-    <MESSAGE value="Interface de la clase test WalletTest i cambio de visibilidad de los test pertinentes" />
-    <MESSAGE value="Los test han cambiado a public para el uso de la interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Los test han cambiado a public para el uso de la interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="modified VehicleIDTest.java it had bugs" />
   </component>
 </project>

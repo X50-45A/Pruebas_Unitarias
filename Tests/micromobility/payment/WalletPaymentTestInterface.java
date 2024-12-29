@@ -12,18 +12,6 @@ public interface WalletPaymentTestInterface {
     void testWalletPaymentCreation();
 
     /**
-     * Test for WalletPayment creation with a null service ID.
-     */
-    @Test
-    void testWalletPaymentWithNullServiceID();
-
-    /**
-     * Test for WalletPayment creation with an empty service ID.
-     */
-    @Test
-    void testWalletPaymentWithEmptyServiceID();
-
-    /**
      * Test for WalletPayment creation with a null amount.
      */
     @Test
