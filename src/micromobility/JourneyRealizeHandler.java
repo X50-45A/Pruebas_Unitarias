@@ -28,7 +28,7 @@ public class JourneyRealizeHandler {
     // Different input events that intervene
     // User interface input events
     public void scanQR(BufferedImage qrImage) throws ConnectException, InvalidPairingArgsException, CorruptedImgException, PMVNotAvailException, ProceduralException, exceptions.ConnectException {
-       PMVehicle vehicleID = qrDecoder.getVehicleID(qrImage);
+       VehicleID vehicleID = qrDecoder.getVehicleID(qrImage);
        server.checkPMVAvail(vehicleID);
        // Further pairing logic...
     }
