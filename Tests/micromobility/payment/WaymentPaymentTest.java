@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class WalletPaymentTest {
+class WalletPaymentTest implements WalletPaymentTestInterface {
     private WalletPayment walletPayment;
     private Wallet wallet;
     private String serviceID;
@@ -23,56 +23,56 @@ class WalletPaymentTest {
     }
 
     @Test
-    void testWalletPaymentCreation() {
+    public void testWalletPaymentCreation() {
         assertNotNull(walletPayment);
         assertEquals(serviceID, walletPayment.getServiceID());
         assertEquals(amount, walletPayment.getAmount());
     }
 
     @Test
-    void testWalletPaymentWithNullServiceID() {
+    public void testWalletPaymentWithNullServiceID() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(null, amount, wallet));
     }
 
     @Test
-    void testWalletPaymentWithEmptyServiceID() {
+    public void testWalletPaymentWithEmptyServiceID() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment("", amount, wallet));
     }
 
     @Test
-    void testWalletPaymentWithNullAmount() {
+    public void testWalletPaymentWithNullAmount() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(serviceID, null, wallet));
     }
 
     @Test
-    void testWalletPaymentWithZeroAmount() {
+    public void testWalletPaymentWithZeroAmount() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(serviceID, BigDecimal.ZERO, wallet));
     }
 
     @Test
-    void testWalletPaymentWithNegativeAmount() {
+    public void testWalletPaymentWithNegativeAmount() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(serviceID, new BigDecimal("-25.00"), wallet));
     }
 
     @Test
-    void testWalletPaymentWithNullWallet() {
+    public void testWalletPaymentWithNullWallet() {
         assertThrows(IllegalArgumentException.class,
                 () -> new WalletPayment(serviceID, amount, null));
     }
 
     @Test
-    void testProcessPayment() throws NotEnoughWalletException {
+    public void testProcessPayment() throws NotEnoughWalletException {
         walletPayment.processPayment();
         assertEquals(new BigDecimal("75.00"), wallet.getBalance());
     }
 
     @Test
-    void testProcessPaymentWithInsufficientFunds() {
+    public void testProcessPaymentWithInsufficientFunds() {
         WalletPayment largePayment = new WalletPayment(
                 serviceID,
                 new BigDecimal("150.00"),
