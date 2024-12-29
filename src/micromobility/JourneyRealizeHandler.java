@@ -12,6 +12,7 @@ import services.smartfeatures.QRDecoder;
 
 import java.awt.image.BufferedImage;
 import java.math.BigDecimal;
+import java.time.Duration;
 import java.time.LocalDateTime;
 import exceptions.*;
 
@@ -59,12 +60,42 @@ public class JourneyRealizeHandler {
    }
 
    // Internal operations
-   private void calculateValues(GeographicPoint endLocation, LocalDateTime endTime) {
-      // Logic to calculate distance, duration, and average speed...
+   private float calculateDistance(GeographicPoint startLocation, GeographicPoint endLocation) {
+      double latDiff = Math.toRadians(endLocation.getLatitude() - startLocation.getLatitude());
+      double lonDiff = Math.toRadians(endLocation.getLongitude() - startLocation.getLongitude());
+      double startLatRad = Math.toRadians(startLocation.getLatitude());
+      double endLatRad = Math.toRadians(endLocation.getLatitude());
+
+      double a = Math.sin(latDiff / 2) * Math.sin(latDiff / 2) +
+              Math.cos(startLatRad) * Math.cos(endLatRad) *
+                      Math.sin(lonDiff / 2) * Math.sin(lonDiff / 2);
+      double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      double earthRadius = 6371; // Radius of the earth in km
+
+      return (float) (earthRadius * c); // Distance in km
    }
 
-   private void calculateImport(float distance, int duration, float averageSpeed, LocalDateTime endTime) {
-      // Logic to calculate the cost of the journey...
+   private void calculateValues(GeographicPoint endLocation, LocalDateTime endTime, GeographicPoint startLocation, LocalDateTime startTime) {
+      float distance = calculateDistance(startLocation, endLocation);
+      long durationInSeconds = Duration.between(startTime, endTime).getSeconds();
+      float durationInHours = durationInSeconds / 3600f;
+      float averageSpeed = (durationInHours > 0) ? distance / durationInHours : 0;
+
+      System.out.printf("Calculated Values: Distance=%.2f km, Duration=%d seconds, AvgSpeed=%.2f km/h\n",
+              distance, durationInSeconds, averageSpeed);
+   }
+
+   private BigDecimal calculateImport(float distance, int duration, float averageSpeed) {
+      BigDecimal baseRate = new BigDecimal("0.50"); // Base rate per km
+      BigDecimal speedMultiplier = (averageSpeed > 25) ? new BigDecimal("1.20") : BigDecimal.ONE; // Speed premium
+      BigDecimal timeMultiplier = (duration > 3600) ? new BigDecimal("1.15") : BigDecimal.ONE; // Long trip premium
+
+      BigDecimal cost = baseRate.multiply(BigDecimal.valueOf(distance))
+              .multiply(speedMultiplier)
+              .multiply(timeMultiplier);
+
+      System.out.printf("Calculated Cost: %.2f\n", cost);
+      return cost;
    }
    public void realizePayment(UserAccount user, BigDecimal amount, char payMethod) throws ConnectException, NotEnoughWalletException {
       if (payMethod == 'W') { // Pago con monedero
