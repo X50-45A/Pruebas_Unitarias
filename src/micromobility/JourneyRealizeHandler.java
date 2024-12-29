@@ -97,7 +97,7 @@ public class JourneyRealizeHandler {
       System.out.printf("Calculated Cost: %.2f\n", cost);
       return cost;
    }
-   public void realizePayment(UserAccount user, BigDecimal amount, char payMethod) throws ConnectException, NotEnoughWalletException {
+   public void realizePayment(UserAccount user, BigDecimal amount, char payMethod,Wallet wallet) throws ConnectException, NotEnoughWalletException {
       if (payMethod == 'W') { // Pago con monedero
          WalletPayment payment = new WalletPayment(user, amount, wallet);
          payment.processPayment();

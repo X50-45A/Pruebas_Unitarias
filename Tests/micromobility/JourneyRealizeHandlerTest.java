@@ -24,7 +24,7 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
     private Server server;
     private ArduinoMicroController arduino;
     private Wallet wallet;
-
+    private WalletPayment walletUser;
     @BeforeEach
     void setUp() {
         journeyService = new JourneyService(
@@ -217,7 +217,7 @@ class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
         BigDecimal paymentAmount = new BigDecimal("25.00");
         char paymentMethod = 'W';
 
-        journeyRealizeHandler.realizePayment(journeyService.getUser(), paymentAmount, paymentMethod);
+        journeyRealizeHandler.realizePayment(journeyService.getUser(), paymentAmount, paymentMethod,wallet);
 
         assertEquals(new BigDecimal("75.00"), wallet.getBalance());
     }

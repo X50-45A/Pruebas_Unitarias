@@ -84,7 +84,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in Practica_unitarias">
+    <configuration name="All in Practica_unitarias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JourneyRealizeHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -100,6 +108,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="JourneyRealizeHandlerTest.testRealizePaymentWithWallet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica_unitarias" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="micromobility.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="micromobility" />
+      <option name="MAIN_CLASS_NAME" value="micromobility.JourneyRealizeHandlerTest" />
+      <option name="METHOD_NAME" value="testRealizePaymentWithWallet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WalletPaymentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">
@@ -111,34 +135,6 @@
       <option name="PACKAGE_NAME" value="micromobility.payment" />
       <option name="MAIN_CLASS_NAME" value="micromobility.payment.WalletPaymentTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="data in Practica_unitarias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica_unitarias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="micromobility in Practica_unitarias" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Practica_unitarias" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="micromobility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="micromobility" />
-      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Practica_unitarias" />
+        <item itemvalue="JUnit.JourneyRealizeHandlerTest.testRealizePaymentWithWallet" />
         <item itemvalue="JUnit.JourneyRealizeHandlerTest" />
         <item itemvalue="JUnit.WalletPaymentTest" />
         <item itemvalue="JUnit.services in Practica_unitarias" />
-        <item itemvalue="JUnit.micromobility in Practica_unitarias" />
-        <item itemvalue="JUnit.data in Practica_unitarias" />
       </list>
     </recent_temporary>
   </component>
