@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class JourneyServiceTest {
+class JourneyServiceTest implements JourneyServiceTestInterface {
 
     private JourneyService journeyService;
 
@@ -24,7 +24,7 @@ class JourneyServiceTest {
     }
 
     @Test
-    void testSetServiceInit() {
+    public void testSetServiceInit() {
         LocalDateTime startTime = LocalDateTime.now();
 
         journeyService.setServiceInit(startTime);
@@ -33,7 +33,7 @@ class JourneyServiceTest {
     }
 
     @Test
-    void testSetServiceFinish() {
+    public void testSetServiceFinish() {
         LocalDateTime endTime = LocalDateTime.now();
         StationID endStation = new StationID("ST1234");
         GeographicPoint endLocation = new GeographicPoint(34.0522f, -118.2437f);
@@ -52,7 +52,7 @@ class JourneyServiceTest {
     }
 
     @Test
-    void testGetInitialValues() {
+    public void testGetInitialValues() {
         assertEquals("testUser@example.com".hashCode(), journeyService.getUser().hashCode());
         assertEquals("PMV12345".hashCode(), journeyService.getVehicle().hashCode());
         assertEquals("ST1234".hashCode(), journeyService.getStartStation().hashCode());

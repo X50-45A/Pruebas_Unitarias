@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="modified VehicleIDTest.java it had bugs">
-      <change afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTestInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java">
+      <change afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyServiceTestInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/micromobility/JourneyServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Exception" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -89,6 +88,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="micromobility" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.WalletPaymentTest">
     <configuration name="JourneyRealizeHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
@@ -182,6 +186,15 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java">
+      <option name="closed" value="true" />
+      <created>1735487102189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1735487102189</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +249,7 @@
     <MESSAGE value="Added Exceptions in all classes" />
     <MESSAGE value="Added the last Exception in class" />
     <MESSAGE value="modified VehicleIDTest.java it had bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="modified VehicleIDTest.java it had bugs" />
+    <MESSAGE value="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java" />
   </component>
 </project>
