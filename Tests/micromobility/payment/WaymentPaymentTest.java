@@ -33,7 +33,7 @@ class WalletPaymentTest implements WalletPaymentTestInterface {
 
     @Test
     public void testWalletPaymentWithNullUserAccount() {
-        assertThrows(IllegalArgumentException.class,
+        assertThrows(NullPointerException.class,
                 () -> new WalletPayment(null, amount, wallet));
     }
 
