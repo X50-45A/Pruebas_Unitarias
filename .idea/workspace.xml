@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="modified VehicleIDTest.java it had bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/micromobility/payment/WalletPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/JourneyRealizeHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +31,12 @@
     &quot;assignee&quot;: &quot;X50-45A&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/X50-45A/Pruebas_Unitarias.git&quot;,
-    &quot;accountId&quot;: &quot;80ae0aa8-ad07-46ad-a93a-87e754220e83&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/X50-45A/Pruebas_Unitarias.git",
+    "accountId": "65616b67-a69c-4842-b8f9-c65b0cc16f6c"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -59,6 +59,7 @@
     "JUnit.GeographicPointTest.getterTest.executor": "Run",
     "JUnit.GeographicPointTest.hashCodeTest.executor": "Run",
     "JUnit.GeographicPointTest.toStringTest.executor": "Run",
+    "JUnit.GeographicPointTestInterface.executor": "Run",
     "JUnit.JourneyRealizeHandlerTest.executor": "Run",
     "JUnit.StationIdTest.executor": "Run",
     "JUnit.UserAccountTest.executor": "Run",
@@ -87,7 +88,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.WalletPaymentTest">
+  <component name="RunManager">
     <configuration name="JourneyRealizeHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Practica_unitarias" />
       <extension name="coverage">

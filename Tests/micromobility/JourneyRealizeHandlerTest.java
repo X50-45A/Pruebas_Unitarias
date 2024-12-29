@@ -1,4 +1,5 @@
 package micromobility;
+
 import data.*;
 import exceptions.*;
 import micromobility.payment.Wallet;
@@ -113,7 +114,6 @@ class JourneyRealizeHandlerTest {
     @Test
     void testScanQR_Successful() {
         BufferedImage mockQRImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
-
         assertDoesNotThrow(() -> journeyRealizeHandler.scanQR(mockQRImage));
     }
 
@@ -126,10 +126,34 @@ class JourneyRealizeHandlerTest {
     void testScanQR_ThrowsPMVNotAvailException() {
         BufferedImage mockQRImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
 
-        assertThrows(PMVNotAvailException.class, () -> {
-            qrDecoder.getVehicleID(mockQRImage); // Decodes QR
-            server.checkPMVAvail(new VehicleID("invalidVehicle"));
-        });
+        // Crear un server que siempre lance PMVNotAvailException
+        Server testServer = new Server() {
+            @Override
+            public void checkPMVAvail(VehicleID vhID) throws PMVNotAvailException {
+                throw new PMVNotAvailException("Vehicle not available");
+            }
+
+            @Override
+            public void registerPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date) {}
+
+            @Override
+            public void stopPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date, float avSp, float dist, int dur, BigDecimal imp) {}
+
+            @Override
+            public void setPairing(UserAccount user, VehicleID veh, StationID st, GeographicPoint loc, LocalDateTime date) {}
+
+            @Override
+            public void unPairRegisterService(JourneyService s) {}
+
+            @Override
+            public void registerLocation(VehicleID veh, StationID st) {}
+        };
+
+        // Crear una nueva instancia del handler con el server modificado
+        JourneyRealizeHandler handler = new JourneyRealizeHandler(journeyService, qrDecoder, testServer, arduino);
+
+        // Probar que se lanza la excepción
+        assertThrows(PMVNotAvailException.class, () -> handler.scanQR(mockQRImage));
     }
 
     @Test
@@ -156,14 +180,12 @@ class JourneyRealizeHandlerTest {
         };
 
         journeyRealizeHandler = new JourneyRealizeHandler(journeyService, qrDecoder, server, faultyArduino);
-
         assertThrows(ProceduralException.class, () -> journeyRealizeHandler.startDriving());
     }
 
     @Test
     void testBroadcastStationID_Successful() {
         StationID stationID = new StationID("ST1234");
-
         assertDoesNotThrow(() -> journeyRealizeHandler.broadcastStationID(stationID));
     }
 
@@ -171,14 +193,12 @@ class JourneyRealizeHandlerTest {
     void testSelectPaymentMethodAndRealizePayment_Successful() throws NotEnoughWalletException {
         WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("30.00"), wallet);
         payment.processPayment();
-
         assertEquals(new BigDecimal("70.00"), wallet.getBalance());
     }
 
     @Test
     void testSelectPaymentMethodAndRealizePayment_ThrowsNotEnoughWalletException() {
         WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("150.00"), wallet);
-
         assertThrows(NotEnoughWalletException.class, payment::processPayment);
         assertEquals(new BigDecimal("100.00"), wallet.getBalance());
     }
