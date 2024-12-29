@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class PMVehicleTest {
+public class PMVehicleTest implements PMVehicleTestInterface{
     private static PMVehicle vehicle;
     private static int id;
     private static GeographicPoint position;
@@ -28,7 +28,7 @@ public class PMVehicleTest {
     }
 
     @Test
-    void setterAndGetter(){
+    public void setterAndGetter(){
         assertEquals(vehicle.state, state);
 
         vehicle.setNotAvailbe();
