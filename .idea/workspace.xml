@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Implementación interface JourneyServiceTestInterface.java y cambio de visibilidad de test en public">
-      <change afterPath="$PROJECT_DIR$/Tests/micromobility/PMVehicleTestInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/micromobility/PMVehicleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/PMVehicleTest.java" afterDir="false" />
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Interface de la clase test PMVehicle">
+      <change afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletTestInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/micromobility/payment/WalletTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,6 +91,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="micromobility.payment" />
       <recent name="micromobility" />
     </key>
   </component>
@@ -202,7 +204,23 @@
       <option name="project" value="LOCAL" />
       <updated>1735487389966</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Test cambiados a public">
+      <option name="closed" value="true" />
+      <created>1735487736575</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735487736575</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Interface de la clase test PMVehicle">
+      <option name="closed" value="true" />
+      <created>1735487772861</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1735487772861</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +277,8 @@
     <MESSAGE value="modified VehicleIDTest.java it had bugs" />
     <MESSAGE value="Visibilidad public de los test i implementación de interifice JourneyRealizeHandlerTestInterface.java" />
     <MESSAGE value="Implementación interface JourneyServiceTestInterface.java y cambio de visibilidad de test en public" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementación interface JourneyServiceTestInterface.java y cambio de visibilidad de test en public" />
+    <MESSAGE value="Test cambiados a public" />
+    <MESSAGE value="Interface de la clase test PMVehicle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface de la clase test PMVehicle" />
   </component>
 </project>
