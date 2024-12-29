@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Interface de la clase test WalletTest i cambio de visibilidad de los test pertinentes">
+    <list default="true" id="90ed41b0-720e-4999-ad5c-ee67a3688fa1" name="Changes" comment="Los test han cambiado a public para el uso de la interface">
       <change afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WalletPaymentTestInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/micromobility/payment/WaymentPaymentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/micromobility/payment/WaymentPaymentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735488344311</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Los test han cambiado a public para el uso de la interface">
+      <option name="closed" value="true" />
+      <created>1735488596414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735488596414</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +294,7 @@
     <MESSAGE value="Test cambiados a public" />
     <MESSAGE value="Interface de la clase test PMVehicle" />
     <MESSAGE value="Interface de la clase test WalletTest i cambio de visibilidad de los test pertinentes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface de la clase test WalletTest i cambio de visibilidad de los test pertinentes" />
+    <MESSAGE value="Los test han cambiado a public para el uso de la interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="Los test han cambiado a public para el uso de la interface" />
   </component>
 </project>
