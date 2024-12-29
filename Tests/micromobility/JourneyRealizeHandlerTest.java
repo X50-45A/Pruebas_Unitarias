@@ -16,7 +16,7 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class JourneyRealizeHandlerTest {
+class JourneyRealizeHandlerTest implements JourneyRealizeHandlerTestInterface{
 
     private JourneyRealizeHandler journeyRealizeHandler;
     private JourneyService journeyService;
@@ -112,18 +112,18 @@ class JourneyRealizeHandlerTest {
     }
 
     @Test
-    void testScanQR_Successful() {
+    public void testScanQR_Successful() {
         BufferedImage mockQRImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
         assertDoesNotThrow(() -> journeyRealizeHandler.scanQR(mockQRImage));
     }
 
     @Test
-    void testScanQR_ThrowsCorruptedImgException() {
+    public void testScanQR_ThrowsCorruptedImgException() {
         assertThrows(CorruptedImgException.class, () -> journeyRealizeHandler.scanQR(null));
     }
 
     @Test
-    void testScanQR_ThrowsPMVNotAvailException() {
+    public void testScanQR_ThrowsPMVNotAvailException() {
         BufferedImage mockQRImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
 
         // Crear un server que siempre lance PMVNotAvailException
@@ -157,12 +157,12 @@ class JourneyRealizeHandlerTest {
     }
 
     @Test
-    void testStartDriving_Successful() {
+    public void testStartDriving_Successful() {
         assertDoesNotThrow(() -> journeyRealizeHandler.startDriving());
     }
 
     @Test
-    void testStartDriving_ThrowsProceduralException() {
+    public void testStartDriving_ThrowsProceduralException() {
         ArduinoMicroController faultyArduino = new ArduinoMicroController() {
             @Override
             public void startDriving() throws ProceduralException {
@@ -184,20 +184,20 @@ class JourneyRealizeHandlerTest {
     }
 
     @Test
-    void testBroadcastStationID_Successful() {
+    public void testBroadcastStationID_Successful() {
         StationID stationID = new StationID("ST1234");
         assertDoesNotThrow(() -> journeyRealizeHandler.broadcastStationID(stationID));
     }
 
     @Test
-    void testSelectPaymentMethodAndRealizePayment_Successful() throws NotEnoughWalletException {
+    public void testSelectPaymentMethodAndRealizePayment_Successful() throws NotEnoughWalletException {
         WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("30.00"), wallet);
         payment.processPayment();
         assertEquals(new BigDecimal("70.00"), wallet.getBalance());
     }
 
     @Test
-    void testSelectPaymentMethodAndRealizePayment_ThrowsNotEnoughWalletException() {
+    public void testSelectPaymentMethodAndRealizePayment_ThrowsNotEnoughWalletException() {
         WalletPayment payment = new WalletPayment("SERVICE123", new BigDecimal("150.00"), wallet);
         assertThrows(NotEnoughWalletException.class, payment::processPayment);
         assertEquals(new BigDecimal("100.00"), wallet.getBalance());
